@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-api",
+  "version": "1.0.0",
+  "description": "Backend en Mongo y Express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iorivargas/FullStackJS.git"
+  },
+  "author": "Aaron Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iorivargas/FullStackJS/issues"
+  },
+  "homepage": "https://github.com/iorivargas/FullStackJS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

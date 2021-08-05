@@ -1,0 +1,13 @@
+1.-//crea json.package
+npm init 
+
+2.- instala electron
+npm i -D electron@latest
+
+3.- modificar script de package.json test por start: electron . 
+
+4.- Isntalar builder como dependencia de desarrollador para compilar los ejecutables
+npm install --save-dev electron-builder
+
+6.-agregar script dist: -m mac, -w windows o -l linux al package.json
+"dist-l": "electron-builder -l"

@@ -1,0 +1,16 @@
+npm install --save cross-env electron-is-dev
+
+npm install concurrently wait-on electron electron-builder typescript
+
+cambiar scrits del package.json
+"scripts":{
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test --env=jsdom",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "release": "yarn react-build && electron-builder --publish=always",
+    "build": "yarn react-build && yarn electron-build",
+    "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
+
+},

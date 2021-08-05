@@ -1,0 +1,18 @@
+{
+  "name": "fullstackjs-desktop",
+  "version": "1.0.0",
+  "description": "Aplicacion de Electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./index.html",
+    "dist-l": "electron-builder -l",
+    "dist-w": "electron-builder -w",
+    "dist-m": "electron-builder -m"
+  },
+  "author": "Aaron Vargas",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7"
+  }
+}
